@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "bowl"
+version = "0.1.0"
+description = ""
+authors = ["Unviray <unviray@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Flask = "^2.0.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+icecream = "^2.1.1"
+autopep8 = "^1.5.7"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

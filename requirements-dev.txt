@@ -1,0 +1,23 @@
+asttokens==2.0.5
+atomicwrites==1.4.0; python_version >= "3.6" and python_full_version < "3.0.0" and sys_platform == "win32" or sys_platform == "win32" and python_version >= "3.6" and python_full_version >= "3.4.0"
+attrs==21.2.0; python_version >= "3.6" and python_full_version < "3.0.0" or python_full_version >= "3.5.0" and python_version >= "3.6"
+autopep8==1.5.7
+click==8.0.1; python_version >= "3.6"
+colorama==0.4.4; python_version >= "3.6" and python_full_version < "3.0.0" and sys_platform == "win32" and platform_system == "Windows" or sys_platform == "win32" and python_version >= "3.6" and python_full_version >= "3.5.0" and platform_system == "Windows"
+executing==0.8.1
+flask==2.0.1; python_version >= "3.6"
+icecream==2.1.1
+iniconfig==1.1.1; python_version >= "3.6"
+itsdangerous==2.0.1; python_version >= "3.6"
+jinja2==3.0.1; python_version >= "3.6"
+markupsafe==2.0.1; python_version >= "3.6"
+packaging==21.0; python_version >= "3.6"
+pluggy==1.0.0; python_version >= "3.6"
+py==1.10.0; python_version >= "3.6" and python_full_version < "3.0.0" or python_full_version >= "3.4.0" and python_version >= "3.6"
+pycodestyle==2.7.0; python_version >= "2.7" and python_full_version < "3.0.0" or python_full_version >= "3.4.0"
+pygments==2.10.0; python_version >= "3.5"
+pyparsing==2.4.7; python_version >= "3.6" and python_full_version < "3.0.0" or python_full_version >= "3.3.0" and python_version >= "3.6"
+pytest==6.2.5; python_version >= "3.6"
+six==1.16.0; python_version >= "2.7" and python_full_version < "3.0.0" or python_full_version >= "3.3.0"
+toml==0.10.2; python_version >= "3.6" and python_full_version < "3.0.0" or python_full_version >= "3.3.0" and python_version >= "3.6"
+werkzeug==2.0.1; python_version >= "3.6"

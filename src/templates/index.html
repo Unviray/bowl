@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+  <title>Bowl</title>
+</head>
+
+<body>
+  <div class="container py-5">
+    <div class="card">
+      <div class="card-body">
+        {% if game.finished %}
+        <p>Fin du Jeux</p>
+        <p>Score Total: <span class="badge badge-dark bg-dark">{{ game.current_score }}</span></p>
+        {% else %}
+        <p>Frame Numéro: <span class="badge badge-dark bg-dark">{{ game.frame_num }}</span></p>
+        <p>Lancer Numéro: <span class="badge badge-dark bg-dark">{{ game.launch_num }}</span></p>
+        <form method="POST">
+          <label for="touched" class="form-label">Nombre de quilles touchées</label>
+          <div class="row">
+            <div class="col-md-10">
+              <input type="number" name="touched" id="touched" class="form-control">
+            </div>
+            <div class="col-md-2 d-flex">
+              <button type="submit" class="btn btn-primary flex-fill">Submit</button>
+            </div>
+          </div>
+        </form>
+        <hr>
+        <p>Score actuel: <span class="badge badge-dark bg-dark">{{ game.current_score }}</span></p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
