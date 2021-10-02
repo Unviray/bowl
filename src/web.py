@@ -10,7 +10,11 @@ game = Game()
 @app.route("/", methods=['POST', 'GET'])
 def home():
     if request.method == "POST":
-        game.launch(int(request.form['touched']))
+        touched = request.form.get("touched")
+        try:
+            game.launch(int(request.form['touched']))
+        except ValueError:
+            pass
 
     return render_template("index.html", game=game)
 

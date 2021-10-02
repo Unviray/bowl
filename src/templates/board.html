@@ -1,0 +1,20 @@
+<table class="table table-bordered text-center">
+  <thead>
+    <tr>
+      <th scope="col" colspan="3" {% if game.frame_num==1 %}class="bg-primary text-light" {% endif %}>1</th>
+      <th scope="col" colspan="3" {% if game.frame_num==2 %}class="bg-primary text-light" {% endif %}>2</th>
+      <th scope="col" colspan="3" {% if game.frame_num==3 %}class="bg-primary text-light" {% endif %}>3</th>
+      <th scope="col" colspan="3" {% if game.frame_num==4 %}class="bg-primary text-light" {% endif %}>4</th>
+      <th scope="col" colspan="3" {% if game.frame_num==5 %}class="bg-primary text-light" {% endif %}>5</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      {% for frame in game.frames %}
+      <td {% if (game.launch_num==1) and (game.frame_num==loop.index) %}class="bg-secondary text-light" {% endif %}>1</td>
+      <td {% if (game.launch_num==2) and (game.frame_num==loop.index) %}class="bg-secondary text-light" {% endif %}>2</td>
+      <td {% if (game.launch_num==3) and (game.frame_num==loop.index) %}class="bg-secondary text-light" {% endif %}>3</td>
+      {% endfor %}
+    </tr>
+  </tbody>
+</table>
